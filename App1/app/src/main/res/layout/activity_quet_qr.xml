@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33000000"
+    tools:context=".QuetQR">
+
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+        />
+
+
+    <View
+    android:id="@+id/squareView"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="#00424040"
+        />
+
+
+    <SurfaceView
+    android:id="@+id/camera_preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+        android:visibility="visible"
+        />
+
+    </FrameLayout>

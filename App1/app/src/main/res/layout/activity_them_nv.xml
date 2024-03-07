@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <!-- EditTexts -->
+    <EditText
+        android:id="@+id/editTextMaNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã nhân viên"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextHoTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ tên"
+        android:layout_below="@id/editTextMaNV"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNgaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Năm sinh"
+        android:layout_below="@id/editTextHoTen"
+        android:layout_margin="16dp"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <!-- ImageView -->
+    <ImageView
+        android:id="@+id/imgvQR"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/editTextNgaySinh"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="109dp" />
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btnTaoMa"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgvQR"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="101dp"
+        android:background="@drawable/button_gradient"
+        android:text="Đăng Ký" />
+
+</RelativeLayout>

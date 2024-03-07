@@ -1,0 +1,37 @@
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp">
+
+    <!-- Chữ đầu tiên -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách điểm danh ngày"
+        android:textSize="24sp"
+        android:textColor="#FF050505"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Chữ thứ hai -->
+    <TextView
+        android:id="@+id/textViewNgay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#050505"
+        android:layout_below="@id/textView"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewNgay"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:background="@drawable/list_gradient"/>
+</RelativeLayout>
